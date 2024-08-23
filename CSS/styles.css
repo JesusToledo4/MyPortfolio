@@ -17,6 +17,9 @@ body {
     background-color: #172724;
     color: #fff;
 }
+.logo span {
+    color: #FFC745;
+}
 
 ul {
     list-style: none;
@@ -113,7 +116,7 @@ p {
 /* Mainheader*/
 
 #mainheader {
-    background: url('Foto-bg.jpg');
+    background: url('/images/Foto-bg.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
@@ -125,7 +128,11 @@ p {
 /* Navbar*/
 
 .navbar {
-    height: 100px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+
 }
 
 .navbar .logo {
@@ -141,6 +148,8 @@ p {
 
 .navbar a:hover {
     color: #ffc038;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #ffc038;
 }
 
 .navbar .container {
@@ -176,8 +185,34 @@ p {
   font-style: normal;
 }
 
+/*================================================================*/
 
+.showcase .redes-s {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.showcase .redes-s a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #ffc038;
+    color: #fff;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.showcase .redes-s a:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+    background: #555;
+}
 /*==================================================================================================*/
 /*About me*/
 
