@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;700&family=Nunito:wght@200&family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@700&family=Poppins:wght@100;200;300;400;500&family=Raleway:wght@400;700;900&family=Roboto:wght@100&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 /*Reset*/
@@ -12,7 +12,7 @@
 /*Main styling*/
 html,
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.5;
     background-color: #172724;
     color: #fff;
@@ -73,13 +73,9 @@ p {
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 10px;
-    margin: 20px;
-}
-
-.btn-light {
-    background: #ffc038;
-    border: solid #ffc038;
-    color: antiquewhite;
+    color: #A68976;
+    background: #FFC745;
+    border: none;
 }
 
 .btn:hover {
@@ -133,6 +129,7 @@ p {
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
 
+
 }
 
 .navbar .logo {
@@ -175,9 +172,9 @@ p {
 }
 
 .showcase-box {
-    width: 50%;
+    width: 55%;
     float: right;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 .contenedor-texto .mascota {
@@ -213,116 +210,135 @@ p {
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
     background: #555;
 }
-/*==================================================================================================*/
-/*About me*/
 
-.caja img {
-    width: 350px;
-    border-radius: 20px;
+.nav-button {
+    margin-left: 70px;
+    padding-top: 15px;
 }
-
-.caja .contenido {
-    text-align:justify;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 50px;
-    color: white;
-
-
+.nav-button button {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
-.caja .btn-1 {
-    justify-content: center;
-    margin: 0 auto;
-    padding: 30px;
+.fa-solid {
+    margin-left: 10px;
 }
 
 
+/* about me 2 */
 
-/* Skill section*/
-
-.caja-1 {
-    border: 2px solid #555;
-    background: #354f52;
-    width: 250px;
-    border-radius: 20px;
-}
-
-.caja-1:hover {
-    overflow: hidden;
-    background: #555;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: all 400ms ease;
-    transform: translateY(-3%);
-}
-
-.caja ul li {
-    text-align: center;
-}
-
-
-/*Experience section*/
-
-
-.caja-2 {
-    width: 200px;
-}
-
-.caja-3 {
-    width: 400px;
-    height: 150px;
-    margin: 10px;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    justify-content: space-evenly;
-}
-.caja-3 img {
-    width: 100%;
-}
-
-/*======== Formacion academica ========*/
-
-.flex-container-2 {
+#about {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: #172724;
+    height: 100vh;
 }
 
-.caja-4 {
-    border: 2px solid #555;
-    width: 500px;
-    height: 120px;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 0.75;
-    margin: 5px auto;
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-
-.caja-5 {
-    border: 2px solid #555;
-    border-radius: 10px;
+.image {
+    flex: 1;
+    padding: 10px;
 }
 
-.caja-4:hover {
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.social {
+.text {
+    flex: 2;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.text h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
     color: #FFC745;
 }
 
-.school-center {
-    text-align: center;
+.text p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.school-center p {
-    letter-spacing: normal;
+.buttons {
+    display: flex;
+    gap: 10px;
 }
+
+
+
+/*---------------------------------------------*/
+/*---------------skills------------------------------*/
+
+#skills {
+    padding: 70px;
+    background-color: #172724;
+    height: 100vh;
+    color: whitesmoke;
+
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skills-left,
+  .skills-right {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .skills-right h3 i {
+    padding-right: 10px;
+  }
+  
+  .skills-left h2,
+  .skills-right h2 {
+    border-bottom: 1px solid #FFC745;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .skill,
+  .education-item {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .education-item p {
+    padding-left: 40px;
+  }
+  
+  .skill ul {
+    list-style: none;
+    padding: 0;
+  }
+  .skill ul i {
+    padding-right: 10px;
+  }
+  
+  .skill ul li,
+  .education-item p {
+    margin: 5px 0;
+  }
 
 /*====== Project section ==========*/
+
+#portfolio {
+    padding-top: 70px;
+}
 
 .container-a {
     width: 100%;
@@ -334,7 +350,6 @@ p {
 
 .card {
     width: 300px;
-    height: 350;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -355,6 +370,10 @@ p {
 
 .contenidos {
     height: 80px;
+}
+.contenidos a {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .card .contenidos {
@@ -389,12 +408,17 @@ p {
 
 /* ==== Contact Section ====*/
 
+#contact {
+    height: 90vh;
+    padding-top: 40px;
+}
+
+
 
 form {
-    width: 350px;
+    width: 370px;
     margin: 0 auto;
     padding: 10px;
-
 }
 
 input, textarea, label {
@@ -440,42 +464,12 @@ input, textarea, label {
 /*--------------------------------------------------------------*/
 
 
-/* formulario de contacto*/
-
-.contenedor {
-    width: 90%;
-    max-width: 1000px;
-    background: #fff;
-    padding: 40px;
-    margin: 20px auto;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-}
-
-.contenedor h1 {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 25px;
-    color: #ffc038;
-}
-
-.contenido {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    flex-wrap: wrap;
-}
-
-.contenido .info,
-.contenido .formulario {
-    width: 50%;
-}
-
 
 /* Estilos Info*/
 
 .info {
     padding-left: 10px;
+    width: 400px;
 }
 
 .info .col {
@@ -493,7 +487,7 @@ input, textarea, label {
 }
 
 .info .col p {
-    color: #999;
+    color: whitesmoke;
 }
 
 .info .redes-s {
@@ -524,10 +518,6 @@ input, textarea, label {
 }
 
 /* Estilos formulario*/
-
-.formulario {
-    padding-left: 10px;
-}
 
 .formulario input[type='text'],
 .formulario input[type='email'],
@@ -560,14 +550,5 @@ input, textarea, label {
     margin-left: 10px;
 }
 
-/*.formulario button {
-    padding: 12px 30px;
-    border: transparent;
-    background: #ffc038;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 8px;
-}
-*/
 
 
